@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<link type="text/css" rel="stylesheet" href="~/css/style.css">
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,600">
+
+
+<div class="container clearfix">
+    <div class="panel-1 active">
+        <div class="player">玩家 1</div>
+        <img src="~/image/Trophy.png" class="winner1">
+        <div class="score" id="player1-current-score">0</div>
+        <div class="box">
+            <div class="label">分數</div>
+            <div class="totalScore" id="player1-total-score">0</div>
+        </div>
+    </div>
+
+    <div class="panel-2">
+        <div class="player">玩家 2</div>
+        <img src="~/image/Trophy.png" class="winner2">
+        <div class="score" id="player2-current-score">0</div>
+        <div class="box">
+            <div class="label">分數</div>
+            <div class="totalScore" id="player2-total-score">0</div>
+        </div>
+    </div>
+
+    <button class="newGame">重設遊戲</button>
+    <button class="roll">摇骰子</button>
+
+    <img src="~/image/dice1.png" class="dice">
+</div>
+
+<script src="~/js/game.js"></script>

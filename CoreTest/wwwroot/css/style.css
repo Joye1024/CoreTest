@@ -1,0 +1,208 @@
+/*
+
+	自定义CSS
+	
+*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+
+    background-image: linear-gradient(rgba(70, 25, 25, 0.3), rgba(70, 25, 25, 0.3)), url(BG.jpg);
+    background-size: cover;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+
+}
+
+.container {
+
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+	border-radius: 5px;
+	
+}
+
+.panel-1,
+.panel-2 {
+
+    width: 50%;
+    float: left;
+    height: 590px;
+    padding: 100px;
+    
+}
+
+.winner1 {
+
+	top: -65px;
+	position: relative;
+	width: 55px;
+	z-index: 1;
+    
+}
+
+.winner2 {
+
+	top: -65px;
+	position: relative;
+	width: 55px;
+	z-index: 1;
+    
+}
+
+.player {
+
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+.score {
+
+	margin-top: 55px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #FF8525;
+    margin-bottom: 80px;
+    
+}
+
+.active {
+
+ 	background-color: #f7f7f7;
+ 	
+ }
+.active .player {
+
+ 	font-weight: 300;
+ 	
+ }
+
+.active .player::after {
+
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #ff8525;
+    top: -7px;
+    right: 10px;
+    
+}
+
+.box {
+
+    background-color: #ff8525;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.label {
+
+    font-size: 18px;
+    
+}
+
+.totalScore {
+
+    font-size: 35px;
+    
+}
+
+button {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+button:hover {
+
+ 	font-weight: 400;
+ 	
+ }
+ 
+button:hover i {
+
+ 	margin-right: 20px;
+ 	
+}
+
+button:focus {
+
+    outline: none;
+    
+}
+
+i {
+
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+    
+}
+
+.newGame {
+
+ 	top: 55px;
+ 	font-size: 30px;
+ 	
+ }
+ 
+.roll {
+
+ 	top: 430px;
+ 	font-size: 30px;
+ 		
+ }
+
+.dice {
+
+    position: absolute;
+    left: 50%;
+    top: 235px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    
+}
